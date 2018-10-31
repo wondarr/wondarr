@@ -1,0 +1,17 @@
+[package]
+name = "wondarr"
+version = "0.1.0"
+authors = ["Nick Nelson <nicknlsn@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.3.17"
+rocket_codegen = "0.3.17"
+serde = "1.0.80"
+serde_derive = "1.0.80"
+tera = "0.11.18"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["handlebars_templates", "tera_templates"]
